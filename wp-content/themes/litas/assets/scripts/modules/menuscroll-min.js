@@ -1,0 +1,1 @@
+export default()=>{$(this).scrollTop()>20?$(".navbar-main").addClass("flattened"):$(".navbar-main").removeClass("flattened")};

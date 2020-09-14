@@ -1,0 +1,18 @@
+.section-logo-separator {
+  background-color: $black;
+  height: 46px;
+  display: flex;
+  align-items: center;
+
+    img {
+      margin:0 15px;
+
+      @include media-breakpoint-up(md) {
+        margin:0 20px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin:0 25px;
+      }
+    }
+}

@@ -1,0 +1,196 @@
+.home .navbar-main {
+    @include media-breakpoint-down(xs) {
+        box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 0;
+    }
+}
+
+.navbar-nav {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.navbar-brand {
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+    @include media-breakpoint-up(md) {
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
+
+.navbar-main {
+    background-color: $white;
+    @include transition();
+
+    @include media-breakpoint-down(sm) {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        @include media-breakpoint-down(md) {
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .menu-item {
+            & + .menu-item {
+                @include media-breakpoint-up(lg) {
+                    margin-left: .25rem;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    margin-left: .625rem;
+                }
+            }
+
+            &.active {
+                .nav-link {
+                    @include media-breakpoint-up(lg) {
+                        background-color: theme-color("light");
+                    }
+                }
+            }
+        }
+
+        .nav-link {
+            position: relative;
+            text-transform: uppercase;
+            color: $black;
+            @include transition();
+
+            @include media-breakpoint-up(lg) {
+                font-size: $font-size-base;
+                letter-spacing: $letter-spacing-nsm;
+                line-height: 1.6rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                line-height: 1.5rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            &:hover {
+                @include media-breakpoint-up(lg) {
+                    background-color: theme-color("light");
+                }
+            }
+        }
+
+        .nav-item {
+            &.active {
+                .nav-link {
+                    @include media-breakpoint-down(md) {
+                        color: theme-color("primary");
+                    }
+
+                    &::before {
+                        @include media-breakpoint-up(lg) {
+                            opacity: 1;
+                            background-color: theme-color("primary");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-link {
+        background-color: transparent !important;
+        color: $black !important;
+    }
+
+    .active .nav-link {
+        text-decoration: underline;
+    }
+
+    &.flattened,
+    &.navbar-open {
+        padding-top: $navbar-padding-mobile-y;
+        padding-bottom: $navbar-padding-mobile-y;
+        background-color: $white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    &.navbar-open {
+        max-height: 100vh;
+        overflow: auto;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: $navbar-padding-mobile-y;
+        padding-bottom: $navbar-padding-mobile-y;
+    }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.hamburger {
+    width: 24px;
+    height: 14px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: theme-color("primary");
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        border-radius: 1px;
+
+        &:nth-child(1) {
+            top: 0;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            top: 6px;
+        }
+
+        &:nth-child(4) {
+            top: 12px;
+        }
+    }
+
+    &.open {
+        span {
+
+            &:nth-child(1) {
+                top: 6px;
+                width: 0;
+                left: 50%;
+            }
+
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+
+            &:nth-child(4) {
+                top: 6px;
+                width: 0%;
+                left: 50%;
+            }
+        }
+    }
+}

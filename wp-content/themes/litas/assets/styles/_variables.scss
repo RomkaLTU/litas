@@ -1,0 +1,64 @@
+$primary: #5630AB;
+$secondary: #FAEADD;
+
+$navbar-padding-y: .9375rem;
+$navbar-light-toggler-border-color: #fff;
+$navbar-light-active-color: #fff;
+
+$letter-spacing-nsm: -.01em;
+$letter-spacing-nlg: -.03em;
+$letter-spacing-nxl: -.03em;
+
+$navbar-brand-height-px: 48px;
+$navbar-padding-mobile-y: $navbar-padding-y;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1110px
+);
+
+$pixel-100-spacers: (
+        xs: 2rem,
+        sm: 2rem,
+        md: 2.25rem,
+        lg: 4.6875rem,
+        xl: 6.25rem
+);
+
+$pixel-75-spacers: (
+        xs: 2rem,
+        sm: 2rem,
+        md: 2.25rem,
+        lg: 3.125rem,
+        xl: 4.6875rem
+);
+
+$pixel-60-spacers: (
+        xs: 1.25rem,
+        sm: 1.5rem,
+        md: 2rem,
+        lg: 2.5rem,
+        xl: 3.75rem
+);
+
+$pixel-50-spacers: (
+        xs: 1.25rem,
+        sm: 1.25rem,
+        md: 1.5625rem,
+        lg: 2.25rem,
+        xl: 3.125rem
+);
+
+$pixel-40-spacers: (
+        xs: 1.125rem,
+        sm: 1.125rem,
+        md: 1.5rem,
+        lg: 2rem,
+        xl: 2.5rem
+);

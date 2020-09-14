@@ -1,0 +1,26 @@
+@import "bootstrap/functions";
+@import "variables";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "mixins";
+@import "bootstrap/reboot";
+@import "bootstrap/bootstrap-grid";
+@import "bootstrap/navbar";
+@import "bootstrap/transitions";
+@import "bootstrap/utilities";
+@import "bootstrap/tables";
+
+@import "globals";
+
+@import "partials/navbar";
+@import "partials/footer";
+//@import "partials/pagination";
+
+@import "sections/hero";
+@import "sections/big-interest";
+@import "sections/logo-separator";
+@import "sections/fast-decisions";
+@import "sections/unlimited";
+@import "sections/insurance";
+
+@import "indeliai";

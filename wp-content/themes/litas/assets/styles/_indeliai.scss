@@ -1,0 +1,42 @@
+.page-template-indeliai {
+  .table-custom-1 {
+    border: 1px solid #C4C4C4;
+    margin-top: 57px;
+
+    th {
+      font-size: rem-calc(20);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      text-align: center;
+      background-color: $black;
+      border-color: $black;
+      border-right: 1px solid #C4C4C4;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      &:first-child {
+        border-left: 1px solid $black;
+      }
+
+      &:last-child {
+        border-right: 1px solid $black;
+      }
+    }
+
+    td {
+      text-align: center;
+      border-top: 0;
+      border-left: 1px solid #C4C4C4;
+      border-right: 1px solid #C4C4C4;
+      font-size: rem-calc(20);
+      padding-top: rem-calc(5);
+      padding-bottom: rem-calc(5);
+    }
+
+    &-rowspan {
+      font-size: rem-calc(36) !important;
+      letter-spacing: -0.02em;
+      vertical-align: middle;
+    }
+  }
+}

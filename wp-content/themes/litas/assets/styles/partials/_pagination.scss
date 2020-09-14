@@ -1,0 +1,37 @@
+ul.page-numbers {
+    @extend .pagination;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > li {
+
+        > a, > span {
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+            min-width: 2.375rem;
+            display: inline-flex !important;
+            justify-content: center;
+            align-items: center;
+            margin-left: .3125rem !important;
+            margin-right: .3125rem !important;
+
+            @include media-breakpoint-up(md) {
+                font-size: $font-size-sm;
+            }
+
+            &.page-numbers {
+                @extend .page-link;
+
+                &:focus, :hover {
+                    /* Additional hover/focus styles here */
+                }
+
+                &.current {
+                    background-color: $pagination-active-bg;
+                    color: $pagination-active-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.section-big-interest {
+    background-color: theme-color("secondary");
+
+    .container {
+        padding-top: rem-calc(90);
+        padding-bottom: rem-calc(90);
+    }
+
+    &-image {
+        max-width: 45%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0.3;
+
+        @include media-breakpoint-up(sm) {
+            opacity: 1;
+        }
+    }
+
+    .section-padding {
+
+    }
+
+    .section-content {
+
+    }
+}

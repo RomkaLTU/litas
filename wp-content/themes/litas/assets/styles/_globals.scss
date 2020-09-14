@@ -1,0 +1,119 @@
+html,
+body {
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+
+    @include media-breakpoint-up(md) {
+        font-size: 14px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 15px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 16px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+        color: $black;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-content {
+    overflow: hidden;
+}
+
+.main-padding-top {
+    padding-top: rem-calc(117);
+
+    @include media-breakpoint-up(lg) {
+        padding-top: calc(5.375rem + #{$navbar-padding-y} * 2);
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: calc(7.375rem + #{$navbar-padding-y} * 2);
+    }
+}
+
+.minimal-padding-top {
+    padding-top: 4.4rem;
+
+    $nav-link-height-lg: $font-size-base * 1.6 + $nav-link-padding-y * 2;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 4.25rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: calc(#{$nav-link-height-lg} + #{$navbar-padding-y} * 2);
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: calc(#{$nav-link-height} + #{$navbar-padding-y} * 2);
+    }
+}
+
+.animate-links {
+
+    a {
+        @include transition();
+    }
+}
+
+.mvh-100 {
+    min-height: 100vh;
+}
+
+.section {
+    a {
+        text-decoration: underline;
+    }
+}
+
+.page:not(.home) {
+    .navbar-main {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06), 0 5px 10px rgba(0, 0, 0, 0.05);
+    }
+}
+
+.section-title {
+    font-size: rem-calc(52);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: rem-calc(20);
+    margin-top: rem-calc(26);
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: rem-calc(62);
+    }
+}
+
+.section-subtitle {
+    font-size: rem-calc(20);
+    line-height: 2;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+}
+
+.section-title-max-w {
+    max-width: 690px;
+}
