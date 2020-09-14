@@ -76,6 +76,73 @@ get_header();
                     </div>
                 </div>
             </div>
+            <div class="section-calculator">
+                <div class="container">
+                    <h1 class="section-title section-title-max-w mb-5">Indėlių skaičiuoklė</h1>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="input-group input-group-sum">
+                                <span class="input-group-sum-currency">€</span>
+                                <label class="input-group-label">Indelio suma</label>
+                                <div class="input-field-wrap">
+                                    <input type="number" step="100">
+                                </div>
+                            </div>
+                            <div class="input-group input-group-radio input-group-radio-terminas">
+                                <div class="mb-2 input-group-label">Indėlio terminas mėnesiais</div>
+                                <div class="d-flex">
+                                    <label class="radio-input-label">
+                                        <input type="radio" name="terminas" value="6">
+                                        <span class="fake-radio-input">6</span>
+                                    </label>
+                                    <label class="radio-input-label">
+                                        <input type="radio" name="terminas" value="12">
+                                        <span class="fake-radio-input">12</span>
+                                    </label>
+                                    <label class="radio-input-label">
+                                        <input type="radio" name="terminas" value="24" checked>
+                                        <span class="fake-radio-input">24</span>
+                                    </label>
+                                    <label class="radio-input-label">
+                                        <input type="radio" name="terminas" value="36">
+                                        <span class="fake-radio-input">36</span>
+                                    </label>
+                                    <label class="radio-input-label">
+                                        <input type="radio" name="terminas" value="48">
+                                        <span class="fake-radio-input">48</span>
+                                    </label>
+                                    <label class="radio-input-label">
+                                        <input type="radio" name="terminas" value="60">
+                                        <span class="fake-radio-input">60</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input-group input-group-radio input-group-radio-senior">
+                                <div class="mb-2 input-group-label">Ar esate senjoras?</div>
+                                <div class="d-flex">
+                                    <label class="radio-input-label">
+                                        <input type="radio" name="senior" value="1">
+                                        <span class="fake-radio-input">Ne</span>
+                                    </label>
+                                    <label class="radio-input-label">
+                                        <input type="radio" name="senior" value="1" checked>
+                                        <span class="fake-radio-input">Taip</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="calc-results">
+                                <div class="calc-results-top">
+                                    Termino gale bus išmokėta
+                                </div>
+                                <div class="calc-results-bottom">
+                                    €5,300
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

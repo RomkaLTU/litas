@@ -4,7 +4,7 @@
   }
 
   .table-custom-1 {
-    border: 1px solid #C4C4C4;
+    border: 1px solid $gray-1;
     margin-top: 57px;
 
     th {
@@ -14,7 +14,7 @@
       text-align: center;
       background-color: $black;
       border-color: $black;
-      border-right: 1px solid #C4C4C4;
+      border-right: 1px solid $gray-1;
       padding-top: 15px;
       padding-bottom: 15px;
 
@@ -30,8 +30,8 @@
     td {
       text-align: center;
       border-top: 0;
-      border-left: 1px solid #C4C4C4;
-      border-right: 1px solid #C4C4C4;
+      border-left: 1px solid $gray-1;
+      border-right: 1px solid $gray-1;
       font-size: rem-calc(20);
       padding-top: rem-calc(5);
       padding-bottom: rem-calc(5);
@@ -71,13 +71,15 @@
     background-color: $secondary;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
 
     @include media-breakpoint-up(md) {
       padding-top: 100px;
       padding-bottom: 100px;
+      margin-top: 100px;
+      margin-bottom: 100px;
       text-align: left;
     }
 
@@ -102,4 +104,116 @@
       margin-bottom: 20px;
     }
   }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    &-sum-currency {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin-bottom: 12px;
+      margin-left: 15px;
+      font-size: rem-calc(20);
+    }
+
+    &-label {
+      letter-spacing: -0.02em;
+    }
+
+    .radio-input-label {
+      margin-right: 5px;
+    }
+
+    &-radio {
+      input {
+        visibility: hidden;
+        position: absolute;
+
+        //&:checked {
+        //  background-color: $primary;
+        //  color: $white;
+        //}
+      }
+
+      .radio-input-label {
+        position: relative;
+        display: flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+
+        .fake-radio-input {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: #EFEFEF;
+          transition: all 0.3s;
+
+          &:hover {
+            cursor: pointer;
+            background-color: $primary;
+            color: $white;
+          }
+
+          &-label {
+            z-index: 10;
+          }
+        }
+
+        input:checked + .fake-radio-input {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
+
+    .input-field-wrap {
+      background: #EFEFEF;
+      border-radius: 27px;
+
+      input {
+        background-color: transparent;
+        border: 0;
+        padding: 12px 12px 12px 35px;
+        width: 100%;
+        font-size: rem-calc(20);
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .input-group-radio-senior {
+    .radio-input-label,
+    .fake-radio-input {
+      width: 79px !important;
+      border-radius: 27px !important;
+    }
+  }
+
+  .calc-results {
+    &-top {
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    &-bottom {
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: -0.02em;
+      font-weight: 800;
+    }
+  }
+
 }
