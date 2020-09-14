@@ -5,7 +5,11 @@
 
   .table-custom-1 {
     border: 1px solid $gray-1;
-    margin-top: 57px;
+    margin-top: 32px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 57px;
+    }
 
     th {
       font-size: rem-calc(20);
@@ -47,10 +51,11 @@
   .centered-list {
     list-style-type: none;
     font-size: 20px;
-    line-height: 24px;
     text-align: center;
+    line-height: 24px;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding-left: 0;
 
     li {
       margin-bottom: 20px;
@@ -62,8 +67,11 @@
       font-weight: bold;
       display: inline-block;
       width: 1em;
-      margin-left: -1em;
       margin-right: 14px;
+
+      @include media-breakpoint-up(md) {
+        margin-left: -1em;
+      }
     }
   }
 

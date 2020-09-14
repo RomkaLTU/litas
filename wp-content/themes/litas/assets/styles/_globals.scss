@@ -93,7 +93,7 @@ img {
 }
 
 .section-title {
-    font-size: rem-calc(52);
+    font-size: rem-calc(32);
     font-weight: 900;
     line-height: 1.1;
     letter-spacing: -0.03em;
@@ -103,6 +103,7 @@ img {
 
     @include media-breakpoint-up(md) {
         text-align: left;
+        font-size: rem-calc(52);
     }
 
     @include media-breakpoint-up(xl) {
