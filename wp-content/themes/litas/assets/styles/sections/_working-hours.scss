@@ -1,0 +1,90 @@
+.section-working-hours {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary;
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
+  .working-hours-left {
+    flex: 1;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+
+    @include media-breakpoint-up(md) {
+      align-items: center;
+    }
+  }
+
+  .working-hours-right {
+    flex: 1;
+  }
+
+  .working-hours-title {
+    font-size: rem-calc(36);
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    max-width: 210px;
+  }
+
+  .working-hours-h {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .working-hours-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    & > div:first-child {
+      font-weight: 800;
+      font-size: rem-calc(20);
+      line-height: 32px;
+      letter-spacing: -0.02em;
+    }
+
+    & > div:last-child {
+      font-size: rem-calc(20);
+      line-height: 32px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .working-hours-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.section-contacts {
+  &-left {
+    font-weight: 800;
+    font-size: rem-calc(24);
+    letter-spacing: -0.02em;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  &-right {
+    font-size: rem-calc(20);
+    line-height: 1.7;
+
+    &-title {
+      font-size: rem-calc(24);
+      font-weight: 800;
+    }
+  }
+}

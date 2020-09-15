@@ -1460,6 +1460,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/assets/styles/sections/_working-hours.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/styles/sections/_working-hours.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1605,6 +1618,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/images/office.jpg": {
+		"ft": 16384,
+		"iS": 263033,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/office.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/images/section_insurance_image.png": {
