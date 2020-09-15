@@ -124,3 +124,56 @@ img {
 .section-title-max-w {
     max-width: 690px;
 }
+
+.wp-wysiwyg {
+    font-size: rem-calc(20);
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: $primary;
+    }
+
+    h2 {
+        font-size: rem-calc(32);
+        line-height: 1.04;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(md) {
+            font-size: rem-calc(62);
+            margin-bottom: 60px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: rem-calc(20);
+        padding-left: 1.2rem;
+
+        li {
+            display: flex;
+            margin-bottom: 10px;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        li:before {
+            content: "\2022";
+            color: $primary;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: 14px;
+
+            @include media-breakpoint-up(md) {
+                margin-left: -1em;
+            }
+        }
+    }
+}
