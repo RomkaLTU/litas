@@ -33,6 +33,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5f61e830dcd38.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5f61e830dcd38-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/assets/scripts/main.js": {
 		"bF": 4,
 		"ft": 64,
