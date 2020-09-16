@@ -3,51 +3,6 @@
     padding-bottom: 50px;
   }
 
-  .table-custom-1 {
-    border: 1px solid $gray-1;
-    margin-top: 32px;
-
-    @include media-breakpoint-up(md) {
-      margin-top: 57px;
-    }
-
-    th {
-      font-size: rem-calc(20);
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      text-align: center;
-      background-color: $black;
-      border-color: $black;
-      border-right: 1px solid $gray-1;
-      padding-top: 15px;
-      padding-bottom: 15px;
-
-      &:first-child {
-        border-left: 1px solid $black;
-      }
-
-      &:last-child {
-        border-right: 1px solid $black;
-      }
-    }
-
-    td {
-      text-align: center;
-      border-top: 0;
-      border-left: 1px solid $gray-1;
-      border-right: 1px solid $gray-1;
-      font-size: rem-calc(20);
-      padding-top: rem-calc(5);
-      padding-bottom: rem-calc(5);
-    }
-
-    &-rowspan {
-      font-size: rem-calc(36) !important;
-      letter-spacing: -0.02em;
-      vertical-align: middle;
-    }
-  }
-
   .centered-list {
     list-style-type: none;
     font-size: 20px;

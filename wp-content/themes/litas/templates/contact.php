@@ -49,8 +49,8 @@ get_header();
                     </div>
                 <?php endwhile; ?>
             </div>
-            <div>
-                <?php echo do_shortcode('[wpgmza id="1"]') ?>
+            <div class="embed-responsive embed-responsive-21by9 pt-special-mobile bg-light">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.6568597344026!2d25.28020551642005!3d54.68046778164383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94146501aa81%3A0x5c917324bfab91f5!2sVokie%C4%8Di%C5%B3%20g.%2030%2C%20Vilnius%2001130!5e0!3m2!1slt!2slt!4v1599045824448!5m2!1slt!2slt" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </div>

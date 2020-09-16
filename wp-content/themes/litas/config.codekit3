@@ -1975,6 +1975,14 @@
 		"oAP": "/templates/contact.php",
 		"oF": 0
 		},
+	"/templates/ikainiai.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/ikainiai.php",
+		"oF": 0
+		},
 	"/templates/indeliai.php": {
 		"cB": 0,
 		"ft": 8192,

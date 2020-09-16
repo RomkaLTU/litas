@@ -35,6 +35,18 @@ img {
     margin-bottom: 1rem;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+.max-w-220px {
+    max-width: 220px;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
 .main-content {
     overflow: hidden;
 }
@@ -174,6 +186,105 @@ img {
             @include media-breakpoint-up(md) {
                 margin-left: -1em;
             }
+        }
+    }
+}
+
+.table-custom-2,
+.table-custom-1 {
+    border: 1px solid $gray-1;
+    margin-top: 32px;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 57px;
+    }
+
+    th {
+        font-size: rem-calc(20);
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        background-color: $black;
+        border-color: $black;
+        border-right: 1px solid $gray-1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:first-child {
+            border-left: 1px solid $black;
+        }
+
+        &:last-child {
+            border-right: 1px solid $black;
+        }
+    }
+
+    td {
+        border-top: 0;
+        border-left: 1px solid $gray-1;
+        border-right: 1px solid $gray-1;
+        font-size: rem-calc(20);
+        padding-top: rem-calc(5);
+        padding-bottom: rem-calc(5);
+    }
+
+    &-rowspan {
+        font-size: rem-calc(36) !important;
+        letter-spacing: -0.02em;
+        vertical-align: middle;
+    }
+}
+
+.table-custom-1 {
+    text-align: center;
+
+    td {
+        text-align: center;
+    }
+}
+
+.table-custom-2 {
+    margin-bottom: 100px;
+    min-width: 600px;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    td {
+        font-size: 1rem;
+    }
+
+    td:first-child {
+        padding-left: 40px;
+    }
+
+    td:last-child {
+        text-align: center;
+    }
+
+    th:first-child {
+        padding-left: 40px;
+    }
+
+    th:last-child {
+        text-align: center;
+    }
+
+    .first {
+        font-weight: 800;
+        letter-spacing: 0.01em;
+
+        td {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .last {
+        td {
+            border-bottom: 1px solid $gray-1;
+            padding-bottom: 40px;
         }
     }
 }

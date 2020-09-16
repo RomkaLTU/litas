@@ -2,8 +2,34 @@
     .footer-section-dark {
         background-color: $black;
         color: $white;
-        padding-top: 65px;
-        padding-bottom: 65px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        
+        @include media-breakpoint-up(md) {
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+
+        &-inner {
+            display: flex;
+            flex-direction: row;
+
+            @include media-breakpoint-up(md) {
+                flex-direction: column;
+            }
+        }
+        
+        &-right {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        
+        .separator {
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
     }
 
     .footer-section-light {
@@ -33,7 +59,15 @@
     list-style-type: none;
     padding: 0;
     display: flex;
-    margin-bottom: rem-calc(30);
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    line-height: 2;
+    
+    @include media-breakpoint-up(md) {
+        margin-bottom: rem-calc(30);
+        flex-direction: row;
+    }
 
     .nav-link {
         color: $white;
@@ -47,15 +81,19 @@
 
 .footer-address-line {
     font-weight: 800;
-    font-size: rem-calc(22);
+    font-size: rem-calc(18);
     line-height: 1.6;
+    margin-bottom: 16px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     @include media-breakpoint-up(md) {
         font-size: rem-calc(36);
+        flex-direction: row;
+        margin-bottom: 0;
     }
 
     .separator {
