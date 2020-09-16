@@ -41,6 +41,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5f6213e2c8cf7.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5f6213e2c8cf7-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/assets/scripts/main.js": {
 		"bF": 4,
 		"ft": 64,
@@ -1484,6 +1492,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/assets/styles/sections/_paskolos.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/styles/sections/_paskolos.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/assets/styles/sections/_rekvizitai.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1647,6 +1668,28 @@
 		"iS": 4982,
 		"oA": 0,
 		"oAP": "/images/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/icon1.png": {
+		"ft": 32768,
+		"iS": 21199,
+		"oA": 0,
+		"oAP": "/images/icon1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/icon2.png": {
+		"ft": 32768,
+		"iS": 20847,
+		"oA": 0,
+		"oAP": "/images/icon2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2047,6 +2090,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/indeliai.php",
+		"oF": 0
+		},
+	"/templates/paskolos.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/paskolos.php",
 		"oF": 0
 		}
 	},
