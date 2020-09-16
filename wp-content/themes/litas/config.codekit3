@@ -25,6 +25,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5f61bebe1e968.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5f61bebe1e968-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/assets/scripts/main.js": {
 		"bF": 4,
 		"ft": 64,
@@ -1468,6 +1476,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/assets/styles/sections/_reports.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/styles/sections/_reports.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/assets/styles/sections/_unlimited.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1965,6 +1986,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/apie.php",
+		"oF": 0
+		},
+	"/templates/ataskaitos.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/ataskaitos.php",
 		"oF": 0
 		},
 	"/templates/contact.php": {
