@@ -1411,6 +1411,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/assets/styles/sections/_duk.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/styles/sections/_duk.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/assets/styles/sections/_fast-decisions.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2002,6 +2015,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/contact.php",
+		"oF": 0
+		},
+	"/templates/duk.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/duk.php",
 		"oF": 0
 		},
 	"/templates/ikainiai.php": {
