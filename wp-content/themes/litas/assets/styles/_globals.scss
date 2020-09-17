@@ -98,6 +98,7 @@ img {
     }
 }
 
+.blog,
 .single,
 .page:not(.home) {
     .navbar-main {
@@ -286,6 +287,43 @@ img {
         td {
             border-bottom: 1px solid $gray-1;
             padding-bottom: 40px;
+        }
+    }
+}
+
+ul.page-numbers {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+    .current {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        
+        &:hover {
+            background-color: $gray-1;
+            color: #000;
+        }
+
+        &.prev,
+        &.next {
+            width: 80px;
         }
     }
 }

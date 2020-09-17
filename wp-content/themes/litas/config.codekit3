@@ -143,6 +143,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/assets/styles/_news.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/styles/_news.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/assets/styles/_single-faq.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -152,6 +165,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/assets/styles/_single-faq.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/assets/styles/_single-post.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/styles/_single-post.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -1626,14 +1652,6 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
-	"/home.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/home.php",
-		"oF": 0
-		},
 	"/images/15White.png": {
 		"ft": 32768,
 		"iS": 426,
@@ -2035,6 +2053,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/single-faq.php",
+		"oF": 0
+		},
+	"/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/single.php",
 		"oF": 0
 		},
 	"/style.css": {
