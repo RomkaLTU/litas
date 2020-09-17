@@ -1,6 +1,3 @@
-import $ from "jquery";
-window.$ = $;
-
 import 'bootstrap';
 import debounce from "./modules/debounce";
 import menuscroll from "./modules/menuscroll";
