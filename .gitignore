@@ -94,6 +94,7 @@ wp-content/*
 !wp-content/themes/
 !wp-content/polylang/
 !favicons
+!wp-content/themes/litas/.babelrc
 
 # ignore these plugins
 wp-content/plugins/hello.php
