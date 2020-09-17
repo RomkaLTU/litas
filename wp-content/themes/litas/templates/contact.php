@@ -4,6 +4,10 @@ Template Name: Contact
 */
 
 get_header();
+
+$contacts = get_field('contacts');
+$working_hours = get_field('working_hours');
+$map = get_field('map');
 ?>
 
 <div class="main-content-wrapper flex-fill position-relative">
@@ -11,46 +15,35 @@ get_header();
         <div class="main-padding-top section">
             <div class="container">
                 <?php while ( have_posts() ) : the_post(); ?>
-                    <h1 class="section-title section-title-max-w"><?php the_title(); ?></h1>
+                    <h1 class="section-title section-title-max-w"><?php echo (!empty($contacts['title'])) ? $contacts['title'] : get_the_title(); ?></h1>
                     <div class="row section-contacts">
                         <div class="col-md-6 section-contacts-left">
-                            <div>Taikos pr. 21B, LT-50210 Kaunas</div>
-                            <div>+370 37 330 779 <span class="separator"></span> +370 685 62121</div>
-                            <div><a href="mailto:labas@unijalitas.lt">labas@unijalitas.lt</a></div>
+                            <?php echo $contacts['left'] ?>
                         </div>
                         <div class="col-md-6 section-contacts-right">
-                            <div class="section-contacts-right-title">Kredito unija LITAS</div>
-                            <div>Įmonės kodas: 302448934</div>
-                            <div>Atsiskaitomoji sąskaita: LT00 0000 0000 0000</div>
-                            <div>Banko kodas: AA0000</div>
+                            <?php echo $contacts['right'] ?>
                         </div>
                     </div>
                     <div class="section-working-hours">
                         <div class="working-hours-left">
-                            <h4 class="working-hours-title">Darbo laikas</h4>
+                            <h4 class="working-hours-title"><?php echo $working_hours['title'] ?></h4>
                             <div class="working-hours-h">
-                                <div class="working-hours-row">
-                                    <div>I-IV</div>
-                                    <div>8:30 – 17:30</div>
-                                </div>
-                                <div class="working-hours-row">
-                                    <div>V</div>
-                                    <div>8:30 – 16:30</div>
-                                </div>
-                                <div class="working-hours-row">
-                                    <div>VI-VII</div>
-                                    <div>Nedirbame</div>
-                                </div>
+                                <?php foreach($working_hours['days'] as $row): ?>
+                                    <div class="working-hours-row">
+                                        <div><?php echo $row['left'] ?></div>
+                                        <div><?php echo $row['right'] ?></div>
+                                    </div>
+                                <?php endforeach ?>
                             </div>
                         </div>
                         <div class="working-hours-right">
-                            <img class="working-hours-image" src="<?php echo get_stylesheet_directory_uri()?>/images/office.jpg" alt="">
+                            <img class="working-hours-image" src="<?php echo wp_get_attachment_image_url($working_hours['image'], 'large') ?>" alt="image">
                         </div>
                     </div>
                 <?php endwhile; ?>
             </div>
             <div class="embed-responsive embed-responsive-21by9 pt-special-mobile bg-light">
-                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.6568597344026!2d25.28020551642005!3d54.68046778164383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94146501aa81%3A0x5c917324bfab91f5!2sVokie%C4%8Di%C5%B3%20g.%2030%2C%20Vilnius%2001130!5e0!3m2!1slt!2slt!4v1599045824448!5m2!1slt!2slt" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <?php echo $map ?>
             </div>
         </div>
     </div>

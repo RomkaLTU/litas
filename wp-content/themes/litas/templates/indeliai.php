@@ -4,13 +4,17 @@ Template Name: Indeliai
 */
 
 get_header();
+
+$palukanos = get_field('palukanos');
+$palukanos_rows = $palukanos['rows'];
+$cta = get_field('cta');
 ?>
 
 <div class="main-content-wrapper flex-fill position-relative">
     <div class="main-content animate-links">
         <div class="main-padding-top section">
             <div class="container">
-                <h1 class="section-title section-title-max-w">Didelės terminuotų indėlių palūkanos</h1>
+                <h1 class="section-title section-title-max-w"><?php echo $palukanos['title'] ?></h1>
 
                 <div class="table-responsive">
                     <table class="table table-custom-1">
@@ -24,8 +28,8 @@ get_header();
                         </thead>
                         <tbody>
                         <tr>
-                            <td>6</td>
-                            <td>1%</td>
+                            <td><?php echo $palukanos_rows[0]['months'] ?></td>
+                            <td><?php echo $palukanos_rows[0]['interest'] ?></td>
                             <td class="table-custom-1-rowspan" rowspan="6">
                                 +0.1%
                             </td>
@@ -33,46 +37,35 @@ get_header();
                                 +0.1%
                             </td>
                         </tr>
+                        <?php
+                        unset($palukanos_rows[0]);
+                        foreach ($palukanos_rows as $row): ?>
                         <tr>
-                            <td>12</td>
-                            <td>2.27%</td>
+                            <td><?php echo $row['months'] ?></td>
+                            <td><?php echo $row['interest'] ?></td>
                         </tr>
-                        <tr>
-                            <td>24</td>
-                            <td>2.4%</td>
-                        </tr>
-                        <tr>
-                            <td>36</td>
-                            <td>2.5%</td>
-                        </tr>
-                        <tr>
-                            <td>48</td>
-                            <td>2.6%</td>
-                        </tr>
-                        <tr>
-                            <td>60</td>
-                            <td>2.7%</td>
-                        </tr>
+                        <?php endforeach ?>
                         </tbody>
                     </table>
                 </div>
 
-                <ul class="centered-list">
-                    <li>Minimali indėlio suma 1000 eurų</li>
-                    <li>Indėlio papildymas bet kuriuo metu (min. suma 1000 eurų)</li>
-                    <li>Indėlio palūkanos išmokamos kas 3 mėnesius</li>
-                    <li>Automatinis indėlio pratęstimas</li>
-                </ul>
+                <?php if (!empty($palukanos['list'])): ?>
+                    <ul class="centered-list">
+                        <?php foreach ($palukanos['list'] as $list_item): ?>
+                            <li><?php echo $list_item['text'] ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
             <div class="section-cta">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <h2 class="section-cta-title">Litas kredito unijos indėliai iki 100 000 eurų yra apdrausti valstybinėje įmonėje “Indėlių ir investicijų draudimas”</h2>
-                            <a href="#" class="section-cta-link">Papildoma informacija indėlininkams</a>
+                            <h2 class="section-cta-title"><?php echo $cta['title'] ?></h2>
+                            <a href="<?php echo $cta['link']['url'] ?>" class="section-cta-link"><?php echo $cta['link']['title'] ?></a>
                         </div>
                         <div class="col text-center text-lg-right">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/images/IID-Logotipas 1.png" alt="">
+                            <img src="<?php echo wp_get_attachment_image_url($cta['image'], 'large') ?>" alt="image">
                         </div>
                     </div>
                 </div>

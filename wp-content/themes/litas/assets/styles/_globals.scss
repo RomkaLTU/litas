@@ -232,7 +232,7 @@ img {
     &-rowspan {
         font-size: rem-calc(36) !important;
         letter-spacing: -0.02em;
-        vertical-align: middle;
+        vertical-align: middle !important;
     }
 }
 

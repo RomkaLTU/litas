@@ -49,6 +49,30 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5f6318543685c.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5f6318543685c-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5f63243c19829.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5f63243c19829-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5f6328cf1a4af.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5f6328cf1a4af-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/assets/scripts/main.js": {
 		"bF": 4,
 		"ft": 64,

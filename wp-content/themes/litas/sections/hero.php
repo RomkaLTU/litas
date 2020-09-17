@@ -1,13 +1,16 @@
+<?php $hero = get_field('hero'); ?>
 <div class="section section-hero" id="hero">
     <div class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2 class="section-title">Finansinės naujienos iš kredito unija litas</h2>
-                    <div class="section-subtitle">Prenumeruokite finansinės naujienas</div>
+                    <h2 class="section-title"><?php echo $hero['title'] ?></h2>
+                    <div class="section-subtitle"><?php echo $hero['subtitle'] ?></div>
                 </div>
                 <div class="col-md-6">
-                    <img src="<?php echo get_stylesheet_directory_uri()?>/images/chart2-1.svg" alt="image">
+                    <?php if (!empty($hero['image'])): ?>
+                        <img src="<?php echo wp_get_attachment_image_url($hero['image'], 'large') ?>" alt="image">
+                    <?php endif ?>
                 </div>
             </div>
         </div>
