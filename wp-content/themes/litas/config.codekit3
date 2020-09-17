@@ -143,6 +143,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/assets/styles/_single-faq.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/styles/_single-faq.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/assets/styles/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2014,6 +2027,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/sections/unlimited.php",
+		"oF": 0
+		},
+	"/single-faq.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/single-faq.php",
 		"oF": 0
 		},
 	"/style.css": {

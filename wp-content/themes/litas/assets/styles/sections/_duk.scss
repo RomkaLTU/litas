@@ -34,11 +34,9 @@
     }
   }
 
-  .duk-item {
-
-  }
-
   .section-title {
+    text-align: left;
+
     @include media-breakpoint-up(md) {
       margin-bottom: 100px;
     }

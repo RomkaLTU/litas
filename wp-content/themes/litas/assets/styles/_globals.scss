@@ -52,7 +52,7 @@ img {
 }
 
 .main-padding-top {
-    padding-top: rem-calc(117);
+    padding-top: rem-calc(140);
 
     @include media-breakpoint-up(lg) {
         padding-top: calc(5.375rem + #{$navbar-padding-y} * 2);
@@ -98,6 +98,7 @@ img {
     }
 }
 
+.single,
 .page:not(.home) {
     .navbar-main {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06), 0 5px 10px rgba(0, 0, 0, 0.05);
