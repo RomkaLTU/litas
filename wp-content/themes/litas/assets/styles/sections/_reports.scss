@@ -1,5 +1,10 @@
 .reports {
   margin-top: 70px;
+  margin-bottom: 50px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 100px;
+  }
 }
 
 .report-row {

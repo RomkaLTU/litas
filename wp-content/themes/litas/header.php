@@ -53,9 +53,15 @@
                     'container' => ''
                 );
                 wp_nav_menu( $args );
+
+                $phone = get_field('phone', 'options');
+                $address = get_field('address', 'options');
                 ?>
             </div>
-            <div class="d-none d-lg-flex flex-column justify-content-end text-right"><strong>+370 685 11111</strong><div>Kaunas, Taikos pr. 21B</div></div>
+            <div class="d-none d-lg-flex flex-column justify-content-end text-right">
+                <strong><a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a></strong>
+                <div><?php echo $address ?></div>
+            </div>
         </div>
     </nav>
 

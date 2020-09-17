@@ -242,6 +242,14 @@ img {
     td {
         text-align: center;
     }
+
+    tr:first-child td {
+        padding-top: 17px;
+    }
+
+    tr:last-child td {
+        padding-bottom: 17px;
+    }
 }
 
 .table-custom-2 {
