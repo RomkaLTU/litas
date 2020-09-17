@@ -93,6 +93,7 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 !wp-content/polylang/
+!favicons
 
 # ignore these plugins
 wp-content/plugins/hello.php

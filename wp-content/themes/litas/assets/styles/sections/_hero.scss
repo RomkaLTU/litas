@@ -9,4 +9,47 @@
         width: 100%;
     }
 
+    .input-group {
+        position: relative;
+        border: 3px solid #302699;
+        box-sizing: border-box;
+        border-radius: 27px;
+        max-width: 330px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        @include media-breakpoint-down(sm) {
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+
+        &-icon {
+            position: absolute;
+            right: 0;
+            margin-right: 18px;
+            border: 0;
+            background-color: transparent;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        input {
+            background-color: transparent;
+            border: 0;
+            padding-left: 22px;
+            font-size: 20px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: #000;
+            }
+        }
+    }
 }
